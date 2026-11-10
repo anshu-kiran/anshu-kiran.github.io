@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Anshu Kiran Sharma — Data Scientist at Pacific Northwest National Laboratory. Research, appointments, education, and publications." name="description"/>
+<meta content="tCCLZ8GuSARljVGOyj-wDhEcIinM61NcRfmBBJ4ihKA" name="google-site-verification"/>
+<link href="https://anshukiran.com/" rel="canonical"/>
+<title>Anshu Kiran Sharma, PhD | Pacific Northwest National Laboratory</title>
+<style>
+    /* A personal homepage typeset to closely follow the ACL camera-ready paper conventions.
+       ACL source: https://github.com/acl-org/acl-style-files/blob/master/formatting.md
+       This is an HTML portfolio, not an official ACL publication or template. */
+    :root {
+      --text: #111;
+      --link: #163da2;
+      --paper: #fff;
+      --background: #e8e8e8;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font-family: "Times New Roman", "Nimbus Roman", "Tinos", Times, serif;
+      font-size: 11pt;
+      line-height: 1.12;
+      -webkit-font-smoothing: auto;
+    }
+    a { color: var(--link); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+    .paper {
+      width: 210mm;
+      min-height: 297mm;
+      max-width: calc(100% - 32px);
+      margin: 32px auto 44px;
+      padding: 25mm 25mm 25mm;
+      background: var(--paper);
+      box-shadow: 0 5px 25px rgba(0,0,0,.13);
+    }
+    /* ACL's ≥5 cm full-width title box; 2.5 cm top margin is set by .paper. */
+    .frontmatter {
+      text-align: center;
+      min-height: 50mm;
+      margin: 0;
+      padding-top: 1mm;
+    }
+    .frontmatter h1 {
+      font-size: 15pt;
+      line-height: 1.13;
+      font-weight: 700;
+      margin: 0 0 5.3mm;
+    }
+    .role {
+      margin: 0 0 1mm;
+      font-size: 12pt;
+      font-weight: 700;
+      line-height: 1.15;
+      text-align: center;
+    }
+    .affiliation { margin: 0; font-size: 12pt; line-height: 1.18; text-align: center; }
+    .frontmatter .contact { font-size: 10pt; margin-top: 2.5mm; line-height: 1.25; }
+    .contact span[aria-hidden="true"] { padding: 0 4px; color: #555; }
+    .columns {
+      columns: 2;
+      column-gap: 6mm;
+      column-fill: balance;
+    }
+    .abstract { margin: 0 0 5.1mm; }
+    .abstract h2 {
+      text-align: center;
+      font-size: 12pt;
+      line-height: 1.12;
+      margin: 0 0 3mm;
+      font-weight: 700;
+    }
+    .abstract p {
+      margin: 0 0 0 0;
+      padding: 0 6mm;
+      font-size: 10pt;
+      line-height: 1.2;
+      text-align: justify;
+      hyphens: auto;
+    }
+    section { margin: 0 0 4.8mm; }
+    section h2 {
+      font-size: 12pt;
+      line-height: 1.14;
+      font-weight: 700;
+      margin: 0 0 2.2mm;
+      break-after: avoid;
+    }
+    .section-n { margin-right: 3mm; }
+    p { margin: 0 0 2.2mm; text-align: justify; hyphens: auto; }
+    .item { margin: 0 0 3mm; break-inside: avoid; }
+    .item:last-child { margin-bottom: 0; }
+    .item strong { font-weight: 700; }
+    .item .meta { display: block; font-style: normal; }
+    .item .dates { font-style: normal; }
+    .item .subtext { display: block; }
+    .selected-publications { break-inside: auto; margin-bottom: 0; }
+    .selected-publications h2 { margin-bottom: 3mm; }
+    .bibliography { margin: 0; padding: 0; list-style: none; }
+    .bibliography li {
+      font-size: 10pt;
+      line-height: 1.12;
+      margin: 0 0 3.2mm;
+      padding-left: 4mm;
+      text-indent: -4mm;
+      text-align: left;
+      hyphens: auto;
+      overflow-wrap: anywhere;
+      break-inside: avoid;
+    }
+    .bibliography .title { font-style: normal; }
+    .bibliography .venue { font-style: italic; }
+    /* ACL: 11 pt body, 10 pt abstract and bibliography, 12 pt section headings.
+       A4 = 210 x 297 mm; usable text = 160 mm = 2 x 77 mm + 6 mm gutter. */
+    @media (max-width: 750px) {
+      body { background: #fff; }
+      .paper { width: 100%; max-width: none; min-height: 0; margin: 0; padding: 26px 24px 42px; box-shadow: none; }
+      .frontmatter { min-height: 0; margin-bottom: 26px; padding-top: 0; }
+      .frontmatter h1 { font-size: 15pt; }
+      .columns { columns: 1; }
+      .abstract { margin-bottom: 20px; }
+      .abstract p { padding: 0 8px; }
+      section { margin-bottom: 20px; }
+      .bibliography li { margin-bottom: 11px; }
+    }
+    @media print {
+      @page { size: A4; margin: 25mm; }
+      body { background: white; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .paper { margin: 0; padding: 0; width: auto; max-width: none; min-height: 0; box-shadow: none; }
+      .frontmatter { min-height: 50mm; margin-bottom: 0; }
+      .columns { columns: 2; column-gap: 6mm; }
+      a { color: #111; }
+    }
+  </style>
+</head>
+
+<body>
+<main class="paper">
+<header class="frontmatter">
+<h1>Anshu Kiran Sharma, Ph.D.</h1>
+<p class="role">Data Scientist</p>
+<p class="affiliation">Pacific Northwest National Laboratory</p>
+<div aria-label="Professional links" class="contact">
+<a href="mailto:ashar076@fiu.edu">Email</a><span aria-hidden="true">·</span>
+<a href="https://scholar.google.com/citations?user=cuB0A3E2W0IC&amp;hl=en" target="_blank">Google Scholar</a><span aria-hidden="true">·</span>
+<a href="https://www.linkedin.com/in/aks-anshu/" target="_blank">LinkedIn</a><span aria-hidden="true"></span>
+<!-- <a href="./Resume.pdf" rel="noopener noreferrer" target="_blank">CV</a> -->
+</div>
+</header>
+
+<div class="columns">
+<div class="abstract" id="abstract">
+<h2>Abstract</h2>
+<p>Anshu Kiran Sharma is a Data Scientist at <a href="https://www.pnnl.gov/" target="_blank">Pacific Northwest National Laboratory</a>. Her research interests center on natural language processing (NLP), large language models (LLMs), agentic AI, and multi-agent systems, with broader interests in computational linguistics, narrative understanding, and cognitive science.</p>
+</div>
+
+<section id="appointments">
+<h2><span class="section-n">1</span>Research Experience</h2>
+<div class="item">
+<strong>Data Scientist</strong> <span class="dates">(Nov 2026 - Current)</span>
+<span class="meta">Pacific Northwest National Laboratory</span>
+</div>
+<div class="item">
+<strong>Ph.D. Research Intern</strong> <span class="dates">(Mar 2025 – Aug 2025)</span>
+<span class="meta">Pacific Northwest National Laboratory</span>
+</div>
+<div class="item">
+<strong>Graduate Research Assistant</strong> <span class="dates">(Jan 2021 – Jul 2026)</span>
+<span class="meta">Cognition, Narrative, and Culture (Cognac) Laboratory</span>
+<span class="subtext">Florida International University</span>
+</div>
+</section>
+
+<section id="education">
+<h2><span class="section-n">2</span>Education</h2>
+<div class="item">
+<strong>Ph.D. in Computer Science</strong> (2026)
+          <span class="meta">Florida International University</span>
+<span class="subtext">Advisor: <a href="https://users.cs.fiu.edu/~markaf/" target="_blank">Mark Finlayson</a></span>
+</div>
+<div class="item">
+<strong>M.S. in Computer Science</strong> (2024)
+          <span class="meta">Florida International University</span>
+</div>
+<div class="item">
+<strong>B.Sc. in Computer Science and Information Technology</strong> (2017)
+          <span class="meta">Tribhuvan University</span>
+</div>
+</section>
+
+<section id="teaching">
+<h2><span class="section-n">3</span>Teaching</h2>
+<p><strong>Graduate Teaching Assistant</strong>, Florida International University (2021–2022; 2025). Courses: Advanced DBMS, Introduction to Cryptocurrencies, Human–Computer Interaction, and Introduction to Machine Learning.</p>
+</section>
+
+<section class="selected-publications" id="publications">
+<h2>Selected Publications</h2>
+<ol class="bibliography">
+<li>Loizidou, A., <b>Sharma, A. K.</b>, Esquivel, A., Finlayson, M. A., and Ocal, M. 2026. <a class="title" href="https://doi.org/10.63317/4o69wu63q5hq" target="_blank">Corpus and Baselines for Distinguishing Authentic, AI-Generated, and AI-Enhanced Resumes</a>. In <span class="venue">Proceedings of the 2026 International Conference on Language Resources and Evaluation (LREC)</span>.</li>
+
+<li><b>Sharma, A. K.</b>, Castiblanco-Melendez, M., Morales A., and Finlayson, M. A. 2026. <a class="title" href="https://doi.org/10.63317/3qpxoskno4hc" target="_blank">Once Upon a Kernel: Extracting Important Events from Narratives</a>. In <span class="venue">Proceedings of the 2026 International Conference on Language Resources and Evaluation (LREC)</span>.</li>
+
+<li>Acharya, A., <b>Sharma, A. K.</b>, Parker, D., Vega, T., Ashraf, R. A., Isenberg, N., Strube, J., and Rallo, R. 2025. <a class="title" href="https://dl.acm.org/doi/10.1145/3731599.3767399" target="_blank">LABMATE: Language Model Based Multi-Agent System to Accelerate Catalysis Experiments</a>. In <span class="venue">Proceedings of the 2025 SC Workshop on Frontiers in Generative AI for HPC Science and Engineering: Foundations, Challenges, and Opportunities</span>.</li>
+
+<li>Islam Erana, T., Islam, A. A., <b>Sharma, A. K.</b>, and Finlayson, M. A. 2026. <a class="title" href="https://aclanthology.org/2026.semeval-1.290/" target="_blank">COGNAC at SemEval-2026 Task 4: Evaluating Narrative Components with LLMs for Hard Story Similarity Cases</a>. In <span class="venue">Proceedings of the 20th International Workshop on Semantic Evaluation (2026)</span>.</li>
+
+<li>Acharya, A., Vega T., Ashraf, R. A., <b>Sharma, A. K.</b>, Parker, D., and Rallo, R. 2025. <a class="title" href="https://arxiv.org/abs/2601.12607" target="_blank">A Cloud-based Multi-Agentic Workflow for Science</a>. <span class="venue">Preprint</span>.</li>
+</ol>
+</section>
+
+</div>
+</main>
+</body>
+</html>
